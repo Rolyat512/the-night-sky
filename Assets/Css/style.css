@@ -1,0 +1,26 @@
+ .section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.is-active a:hover{
+    color: lightskyblue;
+}
+
+#about {
+    margin: 10px;
+    background-color: lightpink
+}
+
+/* filler background color code */
+
+#nasa {
+    margin: 50px;
+    background-color: lightblue;
+}
+
+#weather {
+    margin: 50px;
+    background-color: lightgreen;
+}
