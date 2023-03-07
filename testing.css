@@ -1,0 +1,11 @@
+.main {
+    justify-content: center;
+}
+
+.btnOne {
+    justify-content: left;
+}
+
+.btnTwo {
+    justify-content: right;
+}
