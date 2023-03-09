@@ -17,10 +17,54 @@
 
 #nasa {
     margin: 50px;
-    background-color: lightblue;
 }
 
 #weather {
     margin: 50px;
     background-color: lightgreen;
 }
+
+/* nasa APOD styling code */
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    align-content: center;
+  }
+  
+  figure {
+    padding: 10px;
+    text-align: center;
+  }
+
+  figcaption {
+    text-align: left;
+  }
+  
+  .title {
+    font-style: bold;
+  }
+  
+  #todayAPOD {
+    border: solid lightgrey;
+  }
+  
+  iframe {
+    width: 960px;
+    height: 540px;
+    border: 0;
+  }
+  
+  #resolutionLabel {
+    margin-left: 30px;
+  }
+  
+  #stdRadio {
+    margin-left: 15px;
+  }
+  
+  #submitDate {
+    margin-left: 50px;
+  }
