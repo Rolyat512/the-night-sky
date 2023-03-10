@@ -1,85 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Night Sky</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="./Assets/Css/bulma.css"/>
-    <link rel="stylesheet" type="text/css" href="./Assets/Css/style.css"/>
-</head>
-<body>
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./Assets/Css/bulma.css" />
+    <link rel="stylesheet" type="text/css" href="./Assets/Css/style.css" />
+  </head>
+  <body>
     <header class="hero">
-        <div class="hero-body">
-            <h1 class="title is-1"> The Night Sky </h1>
-            <nav class="tabs is-right is-medium">
-                <ul>
-                    <li class="is-active">
-                        <a class="link" href="#about">Fun Facts</a> </li>
-                        <!-- add id to href and the container/link i want to navigate too-->
-                    <li class="is-active">
-                        <a class="" href="#nasa">Photo of the day</a> </li>
-                    <li class="is-active">
-                        <a class="" href="">Favorite Photos </a> </li>
-                    <li class="is-active">
-                        <a class="" href="#weather"> Weather Forecast </a> </li>
-                </ul>
-            </nav>    
-        </div>    
+      <div class="hero-body">
+        <h1 class="title is-1">The Night Sky</h1>
+        <nav class="tabs is-right is-medium">
+          <ul>
+            <li class="is-active">
+              <a class="link" href="#about">Fun Facts</a>
+            </li>
+            <!-- add id to href and the container/link i want to navigate too-->
+            <li class="is-active">
+              <a class="" href="#nasa">Photo of the day</a>
+            </li>
+            <li class="is-active">
+              <a class="" href="">Favorite Photos </a>
+            </li>
+            <li class="is-active">
+              <a class="" href="#weather"> Weather Forecast </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section class="section">
-        <div class="container">
+      <div class="container">
         <div class="columns">
-            <div class="column is-one-quarter" id="about">
-                <h1 class="title">About Space Section </h1>
-                    <div class="notification is-white">
-                        <p class="is-size-5">
-                        Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text
-                        Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text 
-                        Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text 
-                        Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text 
-                        Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text 
-                        Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text 
-                        Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text 
-                        Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text  
-                        </p>
-                    </div>
+          <div class="column is-one-quarter" id="about">
+            <h1 class="title">About Space Section</h1>
+            <div class="notification is-white">
+              <p class="is-size-5">
+                Example Text Example Text Example Text Example Text Example Text
+                Example Text Example Text Example Text Example Text Example Text
+                Example Text Example Text Example Text Example Text Example Text
+                Example Text Example Text Example Text Example Text Example Text
+                Example Text Example Text Example Text Example Text Example Text
+                Example Text Example Text Example Text Example Text Example Text
+                Example Text Example Text Example Text Example Text Example Text
+                Example Text Example Text Example Text Example Text Example Text
+                Example Text Example Text Example Text Example Text Example Text
+                Example Text Example Text Example Text Example Text Example Text
+                Example Text Example Text Example Text Example Text Example Text
+                Example Text Example Text Example Text Example Text Example Text
+                Example Text Example Text Example Text Example Text Example Text
+                Example Text Example Text Example Text
+              </p>
             </div>
+          </div>
 
-            <div class="column is-half" id="nasa">
-                <h1>Today's NASA Astronomy Picture of the Day (APOD)</h1>
+          <div class="column is-half" id="nasa">
+            <h1>Today's NASA Astronomy Picture of the Day (APOD)</h1>
 
-                <figure id="todayAPOD">
+            <figure id="todayAPOD">
+              <div id="todayPhotoDiv"></div>
 
-                    <div id="todayPhotoDiv"></div>
+              <figcaption id="todayCaption1"></figcaption>
+              <figcaption id="todayCaption2"></figcaption>
+              <figcaption id="todayCaption3"></figcaption>
+              <figcaption id="todayCaption4"></figcaption>
+            </figure>
+          </div>
 
-                    <figcaption id="todayCaption1"></figcaption>
-                    <figcaption id="todayCaption2"></figcaption>
-                    <figcaption id="todayCaption3"></figcaption>
-                    <figcaption id="todayCaption4"></figcaption>
-                </figure>
-
-            </div>
-
-            <div class="column" id="weather">
-                <h1 class="title"> Weather App </h1> 
-            </div>
-            <!-- I think the column should be underneath -->
-
-        </div>    
+          <div class="column" id="weather">
+            <h1 class="title">Weather App</h1>
+          </div>
+          <!-- I think the column should be underneath -->
         </div>
+      </div>
     </section>
 
-
     <footer>
-        <h1>Thanks for visiting!</h1>
+      <h1>Thanks for visiting!</h1>
     </footer>
 
-
-    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
     <script src="./Assets/js/style.js"></script>
-</body>
+  </body>
 </html>
