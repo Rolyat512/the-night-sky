@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Night Sky</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="./Assets/Css/bulma.css" />
     <link rel="stylesheet" type="text/css" href="./Assets/Css/style.css" />
     <script src="https://api.nasa.gov/planetary/apod?api_key=4YA1tHl5ENjBb5eJ7mDhzrFrqGtVqULu0hn1TZnL"></script>
-    <script src="https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=664f4efb11d82ce666457a8d405ca1c7"></script>
+    <script src="api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=664f4efb11d82ce666457a8d405ca1c7"></script>
 </head>
 
 <body class="">
@@ -35,69 +35,40 @@
         </div>    
     </header>
 
-            
-      <div class="columns">
-      
-      
-      
-        <div class="column is-one-third" id="about">
-            <h1 class="title is-3"> About Section</h1>
-              <p>Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text
-                Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text
-                Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text
-                Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text
-                Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text
+    <section class="section">
+        <div class="container">
+        <div class="columns">
+            <div class="column is-one-quarter" id="about">
+                <h1 class="title">About Space Section </h1>
+                    <div class="notification is-white">
+                        <p class="is-size-5">
+                        Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text
+                        Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text 
+                        Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text 
+                        Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text 
+                        Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text 
+                        Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text 
+                        Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text 
+                        Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text  
+                        </p>
+                    </div>
+            </div>
 
-              </p>
-          </div>
-      
-      
-      
-        <div class="column is-two-third">
-              Second column
-      
-              <section class="section is-medium" id="nasa">
-                  <h1 class="title">Nasa Photo of the Day</h1>
-                  <h2 class="subtitle">
-                      A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
-                  </h2>
-              </section>
-      
-      
-      
-              <section class="section" id="weather">
-                  <h1 class="title">Weather</h1>
-                  <h2 class="subtitle">
-                      A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
-                  </h2>
-              </section>
-      
-      
-          </div>
-      
-    
-      
-      </div>    
-      
-      
-      
-      
-      
-      
-      
-      <footer class="footer">
-        <!-- might need to do class="hero-foot?" -->
-        <div class="content has-text-centered">
-          <p>
-            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-          </p>
+            <div class="column is-half" id="nasa">
+                <h1 class="title">Nasa Pictures Here</h1>
+            </div>
+
+            <div class="column" id="weather">
+                <h1 class="title"> Weather App </h1> 
+            </div>
+            <!-- I think the column should be underneath -->
+
+        </div>    
         </div>
       </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-    <script src="./Assets/style.js"></script>
+    <script src="./Assets/js/style.js"></script>
 </body>
 </html>
