@@ -1,26 +1,18 @@
- .section {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+/* html {
+    height: 100vh;
 }
 
-.is-active a:hover{
-    color: lightskyblue;
+.columns {
+    margin: 0px;
 }
 
-#about {
-    margin: 10px;
-    background-color: lightpink
-}
 
-/* filler background color code */
+
 
 #nasa {
-    margin: 50px;
-    background-color: lightblue;
+    background-color: lightgoldenrodyellow;
 }
 
 #weather {
-    margin: 50px;
-    background-color: lightgreen;
-}
+    background-color: lightblue;
+} */
