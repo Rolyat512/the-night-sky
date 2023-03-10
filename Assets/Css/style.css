@@ -1,4 +1,6 @@
-
+.hero {
+  background-color: #001336;
+}
 .section {
 	display: flex;
 	justify-content: center;
