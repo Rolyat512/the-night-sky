@@ -1,3 +1,15 @@
+/* header and footer  */
+
+.hero {
+  background-color: rgb(9, 6, 24);
+}
+
+.footer {
+  background-color: rgb(9, 6, 24);
+}
+
+
+
 
 .section {
 	display: flex;
@@ -5,24 +17,31 @@
 	align-items: center;
 }
 
+.is-active {
+  color: orange;
+}
+
 .is-active a:hover{
     color: lightskyblue;
 }
+
 #about {
     margin: 10px;
 
 }
 
 
-
 /* filler background color code */ 
- #nasa {
+  #nasa {
     margin-right: 15px;
-} 
+}  
 #weather {
     margin-right: 15px;
-    background-color: lightgreen;
+    background-color: lightblue;
 }
+
+
+
 /* nasa APOD styling code */
 
 img {
@@ -61,3 +80,10 @@ img {
   #submitDate {
     margin-left: 50px;
   } 
+
+
+  /* Weaper app css code */
+
+  .textbook {
+    
+  }
