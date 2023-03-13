@@ -4,6 +4,11 @@ var imgEl = document.createElement("img");
 var mainEl = document.getElementById("main")
 var btnSearchEl = document.getElementById("btnSearch")
 var userInput = $("#search")
+var mainUl = document.getElementById("weatherList")
+
+function createList() {
+    mainEl.appendChild(mainUl)
+}
 
 function imageInfo() {
     imgEl.setAttribute("src", "./testing-images/image-1.jpg");
@@ -11,6 +16,7 @@ function imageInfo() {
 }
 
 imageInfo()
+createList()
 
 leftBtn.on("click", function() {
     console.log("Left button works!!")
@@ -49,18 +55,31 @@ rightBtn.on("click", function() {
 function getApiSearch() {
     var requestUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + userInput.val() + "&appid=62b78fd432f4f7c034943f7f3abc8315&units=imperial";
   // Search bar
-    fetch(requestUrl)
-    .then((response) => response.json())
-    .then((data) => console.log(data));
-  
-    for(let i = 0; i < data.result.length; i++) {
-      var mainUl = document.createElement('li');
-      mainUl.innerHTML = data.result[i].main;
-      mainUl.appendChild(mainEl);
-      }
-      console.log("Received!!");
+  fetch(requestUrl)
+  .then((response) => response.json())
+  .then((data) => {
+console.log(data)
+    for(let i = 0; i < data.list.length; i++) {
+      var mainListOne = document.getElementById('listOne');
+      var mainListTwo = document.getElementById('listTwo');
+      var mainListThree = document.getElementById('listThree');
+      var mainListFour = document.getElementById('listFour');
+      mainListOne.innerHTML = "Current Temp: " + data.list[i].main.temp + "°F";
+      mainListTwo.innerHTML = "Feels Like: " + data.list[i].main.feels_like + "°F";
+      mainListThree.innerHTML = "Today's High: " + data.list[i].main.temp_max + "°F";
+      mainListFour.innerHTML = "Today's Low: " + data.list[i].main.temp_min + "°F";
+      mainUl.appendChild(mainListOne);
+      mainUl.appendChild(mainListTwo);
+      mainUl.appendChild(mainListThree);
+      mainUl.appendChild(mainListFour);
+      console.log(data.list[0].main.temp)
+      console.log(data.list[0].main.feels_like)
+      console.log(data.list[0].main.temp_max)
+      console.log(data.list[0].main.temp_min)
     }
-
+    console.log("Received!!");
+  });
+}
     btnSearchEl.addEventListener("click", function() {
         getApiSearch()
         

@@ -4,7 +4,7 @@
 	align-items: center;
 }
 
-.is-active a:hover{
+.is-active a:hover {
     color: lightskyblue;
 }
 
@@ -26,7 +26,7 @@
 
 /* nasa APOD styling code */
 
-img {
+#img {
     width: auto;
     max-width: 100%;
     height: auto;
@@ -34,12 +34,12 @@ img {
     align-content: center;
   }
   
-  figure {
+  #figure {
     padding: 10px;
     text-align: center;
   }
 
-  figcaption {
+  #figcaption {
     text-align: left;
   }
   
@@ -51,7 +51,7 @@ img {
     border: solid lightgrey;
   }
   
-  iframe {
+  #iframe {
     width: 960px;
     height: 540px;
     border: 0;
