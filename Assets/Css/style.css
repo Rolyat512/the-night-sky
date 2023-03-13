@@ -1,70 +1,63 @@
- .section {
+
+.section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.is-active a:hover {
+.is-active a:hover{
     color: lightskyblue;
 }
-
 #about {
     margin: 10px;
-    background-color: lightpink
+
 }
 
-/* filler background color code */
 
-#nasa {
-    margin: 50px;
-}
 
+/* filler background color code */ 
+ #nasa {
+    margin-right: 15px;
+} 
 #weather {
-    margin: 50px;
+    margin-right: 15px;
     background-color: lightgreen;
 }
-
 /* nasa APOD styling code */
 
-#img {
+img {
     width: auto;
     max-width: 100%;
     height: auto;
     max-height: 100%;
     align-content: center;
   }
-  
-  #figure {
+
+  figure {
     padding: 10px;
     text-align: center;
   }
-
-  #figcaption {
+  figcaption {
     text-align: left;
   }
-  
   .title {
     font-style: bold;
   }
-  
   #todayAPOD {
     border: solid lightgrey;
   }
-  
-  #iframe {
+
+  iframe {
     width: 960px;
     height: 540px;
     border: 0;
   }
-  
   #resolutionLabel {
     margin-left: 30px;
   }
-  
   #stdRadio {
     margin-left: 15px;
   }
-  
   #submitDate {
     margin-left: 50px;
-  }
+  } 
