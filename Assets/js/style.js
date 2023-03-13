@@ -1,5 +1,14 @@
 var apiKey = "4YA1tHl5ENjBb5eJ7mDhzrFrqGtVqULu0hn1TZnL";
 
+// Variables for Weather API
+var mainEl = document.getElementById("main")
+var btnSearchEl = document.getElementById("btnSearch")
+var userInput = $("#search")
+var mainUl = document.getElementById("weatherList")
+
+
+
+
 function getTodayAPOD() {
 	var req = new XMLHttpRequest();
 
@@ -67,3 +76,64 @@ function getTodayAPOD() {
 
 /* Runs the function */
 getTodayAPOD();
+
+// Creates list for Weather API data
+function createList() {
+    mainEl.appendChild(mainUl)
+}
+
+// Runs function
+createList()
+
+function getApiSearch() {
+    var requestUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + userInput.val() + "&appid=62b78fd432f4f7c034943f7f3abc8315&units=imperial";
+  // Fetches data from API
+  fetch(requestUrl)
+  .then((response) => response.json())
+  .then((data) => {
+	// Console logs the data to check that function is returning the proper data
+console.log(data)
+
+	// For loop to grab all the data required
+    for(let i = 0; i < data.list.length; i++) {
+      var mainListOne = document.getElementById('listOne');
+      var mainListTwo = document.getElementById('listTwo');
+      var mainListThree = document.getElementById('listThree');
+      var mainListFour = document.getElementById('listFour');
+	  var mainListFive = document.getElementById("listFive")
+	  var locationIcon = document.getElementById("weather-icon");
+	  // Variable to grab the Problem Child
+	  var {icon} = data.list[i].weather[0].icon;
+	  // Grabs data that we want to display
+      mainListOne.innerHTML = "Current Temp: " + data.list[i].main.temp + "°F";
+      mainListTwo.innerHTML = "Feels Like: " + data.list[i].main.feels_like + "°F";
+      mainListThree.innerHTML = "Today's High: " + data.list[i].main.temp_max + "°F";
+      mainListFour.innerHTML = "Today's Low: " + data.list[i].main.temp_min + "°F";
+	  mainListFive.innerHTML = "Weather Conditions: " + data.list[i].weather[0].description;
+	  
+	 // The Problem Child
+	  locationIcon.innerHTML = `<img src="../Assets/icons/${icon}.png">`;
+	  // Appends data to HTML document
+      mainUl.appendChild(mainListOne);
+      mainUl.appendChild(mainListTwo);
+      mainUl.appendChild(mainListThree);
+      mainUl.appendChild(mainListFour);
+      mainUl.appendChild(mainListFive);
+	  // Appends the Problem Child
+	  mainUl.appendChild(locationIcon);
+	  // Console logs the data just to double check
+      console.log(data.list[0].main.temp);
+      console.log(data.list[0].main.feels_like);
+      console.log(data.list[0].main.temp_max);
+      console.log(data.list[0].main.temp_min);
+	  console.log(data.list[0].weather[0].description)
+	  // Console logs the data for the Problem Child
+	  console.log(data.list[0].weather[0].icon)
+    }
+    console.log("Received!!");
+  });
+}
+	// Adds event listener for Search button for API
+    btnSearchEl.addEventListener("click", function() {
+        getApiSearch()
+      })
