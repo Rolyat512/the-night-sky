@@ -2,11 +2,15 @@ body {
   justify-content: space-between;
 } 
 
-
 /* header and footer  */
 
 .hero {
   background-color: rgb(9, 6, 24);
+}
+
+#main-title {
+  font-size: 75px;
+  font-weight: bold;
 }
 
 a {
@@ -29,7 +33,8 @@ a {
 }
 
 #about-title {
-  
+  text-align: center;
+  font-weight: bold;
 }
 
 #about-info {
@@ -81,6 +86,7 @@ a {
 
 #apod-title {
   text-align: center;
+  font-weight: bold;
 }
 
 
@@ -104,6 +110,7 @@ img {
   }
   #todayAPOD {
     border: solid lightgrey;
+    font-size: 20px;
   }
 
   iframe {
