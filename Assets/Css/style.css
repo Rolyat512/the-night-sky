@@ -1,31 +1,94 @@
+body {
+  justify-content: space-between;
+} 
+
+/* header and footer  */
+
 .hero {
-  background-color: #001336;
+  background-color: rgb(9, 6, 24);
 }
+
+#main-title {
+  font-size: 75px;
+  font-weight: bold;
+}
+
+a {
+  color:rgb(134, 64, 114);
+}
+
+.link-color {
+  color:rgb(134, 64, 114);
+}
+
+.footer {
+  background-color: rgb(9, 6, 24);
+}
+
+
+/* about section */
+
+.notification {
+  background-color: rgb(9, 6, 24);
+}
+
+#about-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+#about-info {
+  margin-left: 15px;
+  border: solid;
+  border-color: white;
+}
+
+
 .section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+} 
+
+.is-active {
+  color: orange;
 }
 
 .is-active a:hover{
     color: lightskyblue;
 }
+
 #about {
     margin: 10px;
 
 }
 
 
-
 /* filler background color code */ 
- #nasa {
-    margin-right: 15px;
-} 
+  #nasa {
+    margin-right: 10px; 
+    margin-left: 10px;
+}  
+
+
 #weather {
-    margin-right: 15px;
-    background-color: lightgreen;
-}
+  /* margin-right: 10px;
+  margin-left: 10px; */
+  padding: 5%;
+  background-color: rgb(9, 6, 24);
+  border: solid;
+  border-color: white;
+} 
+
+
+
 /* nasa APOD styling code */
+
+#apod-title {
+  text-align: center;
+  font-weight: bold;
+}
+
 
 img {
     width: auto;
@@ -47,6 +110,7 @@ img {
   }
   #todayAPOD {
     border: solid lightgrey;
+    font-size: 20px;
   }
 
   iframe {
@@ -63,3 +127,29 @@ img {
   #submitDate {
     margin-left: 50px;
   } 
+
+
+  /* Weaper app css code */
+.textbox {
+
+}
+
+#btnSearch {
+    background-color: rgb(134, 64, 114);
+  }
+
+  #weather {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 5%;
+    background-color: rgb(9, 6, 24);
+    border: solid;
+    border-color: white;
+  } 
+  
+  #weather-border {
+    border-left: solid;
+    border-left-color: white;
+    border-right: solid;
+    border-right-color: white;
+  }

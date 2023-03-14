@@ -1,3 +1,155 @@
+body {
+    justify-content: space-between;
+  } 
+  
+  
+  /* header and footer  */
+  
+  .hero {
+    background-color: rgb(9, 6, 24);
+  }
+  
+  a {
+    color:rgb(134, 64, 114);
+  }
+  
+  .link-color {
+    color:rgb(134, 64, 114);
+  }
+  
+  .footer {
+    background-color: rgb(9, 6, 24);
+  }
+  
+  
+  /* about section */
+  
+  .notification {
+    background-color: rgb(9, 6, 24);
+  }
+  
+  #about-title {
+    
+  }
+  
+  #about-info {
+    margin-left: 15px;
+    border: solid;
+    border-color: white;
+  }
+  
+  
+  .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  } 
+  
+  .is-active {
+    color: orange;
+  }
+  
+  .is-active a:hover{
+      color: lightskyblue;
+  }
+  
+  #about {
+      margin: 10px;
+  
+  }
+  
+  
+  /* filler background color code */ 
+    #nasa {
+      margin-right: 10px; 
+      margin-left: 10px;
+  }  
+  
+  
+  #weather {
+    /* margin-right: 10px;
+    margin-left: 10px; */
+    padding: 5%;
+    background-color: rgb(9, 6, 24);
+    border: solid;
+    border-color: white;
+  } 
+  
+  
+  
+  /* nasa APOD styling code */
+  
+  #apod-title {
+    text-align: center;
+  }
+  
+  
+  img {
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+      align-content: center;
+    }
+  
+    figure {
+      padding: 10px;
+      text-align: center;
+    }
+    figcaption {
+      text-align: left;
+    }
+    .title {
+      font-style: bold;
+    }
+    #todayAPOD {
+      border: solid lightgrey;
+    }
+  
+    iframe {
+      width: 960px;
+      height: 540px;
+      border: 0;
+    }
+    #resolutionLabel {
+      margin-left: 30px;
+    }
+    #stdRadio {
+      margin-left: 15px;
+    }
+    #submitDate {
+      margin-left: 50px;
+    } 
+  
+  
+    /* Weaper app css code */
+  .textbox {
+  
+  }
+  
+  #btnSearch {
+      background-color: rgb(134, 64, 114);
+    }
+  
+    #weather {
+      margin-right: 10px;
+      margin-left: 10px;
+      padding: 5%;
+      background-color: rgb(9, 6, 24);
+      border: solid;
+      border-color: white;
+    } 
+    
+    #weather-border {
+      border-left: solid;
+      border-left-color: white;
+      border-right: solid;
+      border-right-color: white;
+    }
+
+
+<!-- above this branch is all of the css-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,7 +184,7 @@
         }
         </style> -->
       <div class="hero-body">
-        <h1 class="title is-1" id="main-title">The Night Sky</h1>
+        <h1 class="title is-1">The Night Sky</h1>
         <nav class="tabs is-right is-medium">
           <ul>
             <li class="is-active">
@@ -164,3 +316,131 @@
     <script src="./Assets/js/style.js"></script>
   </body>
 </html>
+
+<!-- above this line is call of the html  -->
+
+<section class="level is-mobile" id="weather"> 
+            
+    <div class="level-left">
+      <h1 class="title is-3">Weather Forecast</h1>
+    </div>
+    
+    <div class="left-right">
+        <section class="textbox">
+            <textarea id="search">Detroit</textarea>
+        </section>
+        <section class="button" id="btnSearch">
+             <div>Search city!</div>
+        </section>
+    </div>
+
+   
+    <div class="level-right">
+
+        <section id="main">
+            <ul id="weatherList">
+                 <li id="listOne"></li>
+                <li id="listTwo"></li>
+                <li id="listThree"></li>
+                <li id="listFour"></li>
+                <li id="listFive"></li>
+                <li id="listSix"></li>
+            </ul>
+        </section>
+    </div>
+
+    
+     <div class="level-right">
+        <img class="weather-icon" img src="./Assets/icons/unknown.png"></img>
+    </div>
+</section> 
+
+<!-- original html weather code below this line -->
+    
+<section class="section" id="weather">
+    <h1 class="title"></h1>
+    <section class="textbox">
+        <textarea id="search">Detroit</textarea>
+      </section>
+      <section class="button" id="btnSearch">
+        <div>Search!</div>
+      </section>
+      <section id="main">
+        <ul id="weatherList">
+            <li id="listOne"></li>
+            <li id="listTwo"></li>
+            <li id="listThree"></li>
+            <li id="listFour"></li>
+            <li id="listFive"></li>
+            <li id="listSix"></li>
+        </ul>
+        <img class="weather-icon" img src="./Assets/icons/unknown.png"></img>
+    </section>
+    </section>
+
+
+    <!-- more practice html but with title above  -->
+    
+    <section class="section" id="weather">
+        <div class="container">
+
+        <h1 class="title">Today's Weather Forecast</h1>
+
+        <section class="textbox">
+            <textarea id="search">Detroit</textarea>
+        </section>
+
+          <section class="button" id="btnSearch">
+            <div>Search!</div>
+          </section>
+          <section id="main">
+            <ul id="weatherList">
+                <li id="listOne"></li>
+                <li id="listTwo"></li>
+                <li id="listThree"></li>
+                <li id="listFour"></li>
+                <li id="listFive"></li>
+                <li id="listSix"></li>
+            </ul>
+            <img class="weather-icon" img src="./Assets/icons/unknown.png"></img>
+        </section>
+
+        </div>
+        </section>
+
+
+        <!-- Column strategy weather container -->
+    <div class="columns">  
+        <h1 class="title is-3">Weather Forecast</h1>
+
+        <div class="column is-one-third" id="weather"> 
+                <section class="textbox">
+                    <textarea id="search">Detroit</textarea>
+                </section>
+                <section class="button" id="btnSearch">
+                     <div>Search city!</div>
+                </section>
+        </div>        
+          
+        
+         <div class="column is-one-third">
+        
+            <section id="main">
+                <ul id="weatherList">
+                    <li id="listOne"></li>
+                    <li id="listTwo"></li>
+                    <li id="listThree"></li>
+                    <li id="listFour"></li>
+                    <li id="listFive"></li>
+                    <li id="listSix"></li>
+                </ul>
+            </section>
+        </div>
+        
+            
+             <div class="column is-one-third">
+                <img class="weather-icon" img src="./Assets/icons/unknown.png"></img>
+            </div>
+
+    </div>    
+          
