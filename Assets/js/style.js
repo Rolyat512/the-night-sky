@@ -112,7 +112,7 @@ console.log(data)
 	  mainListFive.innerHTML = "Weather Conditions: " + data.list[i].weather[0].description;
 	  
 	 // The Problem Child
-	  locationIcon.innerHTML = `<img src="../Assets/icons/${icon}.png">`;
+	  //locationIcon.innerHTML = `<img src="../Assets/icons/${icon}.png">`;
 	  // Appends data to HTML document
       mainUl.appendChild(mainListOne);
       mainUl.appendChild(mainListTwo);
@@ -120,7 +120,7 @@ console.log(data)
       mainUl.appendChild(mainListFour);
       mainUl.appendChild(mainListFive);
 	  // Appends the Problem Child
-	  mainUl.appendChild(locationIcon);
+	  //mainUl.appendChild(locationIcon);
 	  // Console logs the data just to double check
       console.log(data.list[0].main.temp);
       console.log(data.list[0].main.feels_like);
@@ -130,6 +130,9 @@ console.log(data)
 	  // Console logs the data for the Problem Child
 	  console.log(data.list[0].weather[0].icon)
     }
+	
+	localStorage.setItem("User Input", userInput.val());
+	
     console.log("Received!!");
   });
 }
