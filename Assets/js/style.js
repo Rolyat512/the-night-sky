@@ -18,6 +18,7 @@ function getTodayAPOD() {
 		if(req.status >= 200 && req.status < 400)
 		{
 			var response = JSON.parse(req.response);
+			console.log(response)
 
 			/* Clears text content of captions */
 			document.getElementById("todayCaption1").textContent = "";
@@ -101,9 +102,28 @@ console.log(data)
       var mainListThree = document.getElementById('listThree');
       var mainListFour = document.getElementById('listFour');
 	  var mainListFive = document.getElementById("listFive")
+	  var mainListSix = document.getElementById("listSix")
 	  var locationIcon = document.getElementById("weather-icon");
 	  // Variable to grab the Problem Child
 	  var {icon} = data.list[i].weather[0].icon;
+
+	  function cloudConditions() {
+		var cloudResponse = data.list[i].clouds.all
+		console.log(cloudResponse)
+		if( (cloudResponse >= 0) && (cloudResponse <= 25)) {
+			mainListSix.innerHTML = "It's sunny out!"
+		}
+		else if((cloudResponse > 25) && (cloudResponse <= 60)) {
+			mainListSix.innerHTML = "It's partly cloudy!"
+		}
+		else if((cloudResponse > 60) && (cloudResponse <= 75)){
+			mainListSix.innerHTML = "It's mostly cloudy!"
+	  } else if(cloudResponse > 75) {
+			mainListSix.innerHTML = "It's cloudy out!"
+	  }
+	}
+
+	  cloudConditions()
 	  // Grabs data that we want to display
       mainListOne.innerHTML = "Current Temp: " + data.list[i].main.temp + "°F";
       mainListTwo.innerHTML = "Feels Like: " + data.list[i].main.feels_like + "°F";
@@ -112,15 +132,16 @@ console.log(data)
 	  mainListFive.innerHTML = "Weather Conditions: " + data.list[i].weather[0].description;
 	  
 	 // The Problem Child
-	  locationIcon.innerHTML = `<img src="../Assets/icons/${icon}.png">`;
+	 // locationIcon.innerHTML = `<img src="../Assets/icons/${icon}.png">`;
 	  // Appends data to HTML document
       mainUl.appendChild(mainListOne);
       mainUl.appendChild(mainListTwo);
       mainUl.appendChild(mainListThree);
       mainUl.appendChild(mainListFour);
       mainUl.appendChild(mainListFive);
+	  mainUl.appendChild(mainListSix)
 	  // Appends the Problem Child
-	  mainUl.appendChild(locationIcon);
+	//  mainUl.appendChild(locationIcon);
 	  // Console logs the data just to double check
       console.log(data.list[0].main.temp);
       console.log(data.list[0].main.feels_like);
