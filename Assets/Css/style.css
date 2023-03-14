@@ -153,3 +153,8 @@ img {
     border-right: solid;
     border-right-color: white;
   }
+
+  #save {
+    background-color: rgb(134, 64, 114);
+    color:white;
+  }
