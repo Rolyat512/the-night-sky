@@ -1,5 +1,4 @@
 var apiKey = "4YA1tHl5ENjBb5eJ7mDhzrFrqGtVqULu0hn1TZnL";
-
 // Variables for Weather API
 var mainEl = document.getElementById("main")
 var btnSearchEl = document.getElementById("btnSearch")
@@ -65,6 +64,14 @@ function getTodayAPOD() {
 			{
 				document.getElementById("todayCaption4").textContent = "Copyright: " + response.copyright;
 			}
+		var apodPhoto = response.hdurl
+		var apodSaved = $("#save")
+			
+		save.addEventListener("click", function() { 
+		localStorage.setItem("favoritephoto", JSON.stringify(apodPhoto));
+		JSON.parse(localStorage.getItem("favoritephoto"));
+		})
+
 		}
 		else
 		{
@@ -74,6 +81,7 @@ function getTodayAPOD() {
 
 	req.send(null);
 }
+
 
 /* Runs the function */
 getTodayAPOD();
