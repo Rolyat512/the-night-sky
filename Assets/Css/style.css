@@ -1,7 +1,20 @@
+body {
+  justify-content: space-between;
+} 
+
+
 /* header and footer  */
 
 .hero {
   background-color: rgb(9, 6, 24);
+}
+
+a {
+  color:rgb(134, 64, 114);
+}
+
+.link-color {
+  color:rgb(134, 64, 114);
 }
 
 .footer {
@@ -9,13 +22,28 @@
 }
 
 
+/* about section */
+
+.notification {
+  background-color: rgb(9, 6, 24);
+}
+
+#about-title {
+  
+}
+
+#about-info {
+  margin-left: 15px;
+  border: solid;
+  border-color: white;
+}
 
 
 .section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
+} 
 
 .is-active {
   color: orange;
@@ -33,16 +61,28 @@
 
 /* filler background color code */ 
   #nasa {
-    margin-right: 15px;
+    margin-right: 10px; 
+    margin-left: 10px;
 }  
+
+
 #weather {
-    margin-right: 15px;
-    background-color: lightblue;
-}
+  /* margin-right: 10px;
+  margin-left: 10px; */
+  padding: 5%;
+  background-color: rgb(9, 6, 24);
+  border: solid;
+  border-color: white;
+} 
 
 
 
 /* nasa APOD styling code */
+
+#apod-title {
+  text-align: center;
+}
+
 
 img {
     width: auto;
@@ -83,7 +123,26 @@ img {
 
 
   /* Weaper app css code */
+.textbox {
 
-  .textbook {
-    
+}
+
+#btnSearch {
+    background-color: rgb(134, 64, 114);
+  }
+
+  #weather {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 5%;
+    background-color: rgb(9, 6, 24);
+    border: solid;
+    border-color: white;
+  } 
+  
+  #weather-border {
+    border-left: solid;
+    border-left-color: white;
+    border-right: solid;
+    border-right-color: white;
   }
