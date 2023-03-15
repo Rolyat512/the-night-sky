@@ -191,3 +191,4 @@ function getApiSearch() {
     btnSearchEl.addEventListener("click", function() {
         getApiSearch()
       })
+	  
