@@ -35,6 +35,9 @@ Get the NASA Astronomy Picture of the Day at https://github.com/nasa/apod-api
 OpenWeather 5-Day Forecast API© 2012 — 2023 OpenWeather ® All rights reserved
 Get OpenWeather API at https://openweathermap.org/forecast5
 
+jQuery Copyright 2023 OpenJS Foundation and jQuery contributors.
+Get jQuery at https://jquery.com
+
 ## License
 
 Licensed under the MIT License
