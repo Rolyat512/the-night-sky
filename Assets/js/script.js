@@ -14,11 +14,6 @@ const populateStorage = async () => {
 
   store.forEach((city) => {
     optSearch.innerHTML += `<option>${city}</option>`;
-
-    optSearch.addEventListener("click", function () {
-      userInput.innerHTML = `${city}`;
-      userInput.appendChild(userInput);
-    });
   });
 };
 
@@ -128,12 +123,12 @@ function getApiSearch() {
         var mainListFive = document.getElementById("listFive");
         var mainListSix = document.getElementById("listSix");
         var locationIcon = document.getElementById("weather-icon");
-        var { icon } = data.list[i].weather[0];
+        var { icon } = data.list[0].weather[0];
 
         locationIcon.src = `http://openweathermap.org/img/w/${icon}.png`;
 
         function cloudConditions() {
-          var cloudResponse = data.list[i].clouds.all;
+          var cloudResponse = data.list[0].clouds.all;
           console.log(cloudResponse);
           if (cloudResponse >= 0 && cloudResponse <= 25) {
             mainListSix.innerHTML = "It's clear out!";
