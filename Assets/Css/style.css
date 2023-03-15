@@ -2,6 +2,7 @@ body {
   justify-content: space-between;
 } 
 
+
 /* header and footer  */
 
 .hero {
@@ -64,23 +65,6 @@ a {
 }
 
 
-/* filler background color code */ 
-  #nasa {
-    margin-right: 10px; 
-    margin-left: 10px;
-}  
-
-
-#weather {
-  /* margin-right: 10px;
-  margin-left: 10px; */
-  padding: 5%;
-  background-color: rgb(9, 6, 24);
-  border: solid;
-  border-color: white;
-} 
-
-
 
 /* nasa APOD styling code */
 
@@ -129,11 +113,14 @@ img {
   } 
 
 
+  #nasa {
+    margin-right: 10px; 
+    margin-left: 10px;
+}  
+
+
   /* Weaper app css code */
-.textbox {
-
-}
-
+ƒ
 #btnSearch {
     background-color: rgb(134, 64, 114);
   }
@@ -158,3 +145,17 @@ img {
     background-color: rgb(134, 64, 114);
     color:white;
   }
+
+  #weather {
+    /* margin-right: 10px;
+    margin-left: 10px; */
+    padding: 5%;
+    background-color: rgb(9, 6, 24);
+    border: solid;
+    border-color: white;
+  } 
+
+  #weather-icon {
+    width: 90%;
+  }
+  
