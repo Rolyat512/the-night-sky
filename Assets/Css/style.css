@@ -12,15 +12,17 @@ body {
 #main-title {
   font-size: 75px;
   font-weight: bold;
+  font-style: italic;  
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 a {
   color:rgb(134, 64, 114);
-}
+} 
 
 .link-color {
   color:rgb(134, 64, 114);
-}
+} 
 
 .footer {
   background-color: rgb(9, 6, 24);
@@ -118,10 +120,17 @@ img {
     margin-left: 10px;
 }  
 
+#save {
+  background-color: rgb(134, 64, 114);
+  color:white;
+  padding: 5px; 
+  border-radius: 8px;
+}
 
-  /* Weaper app css code */
-ƒ
-#btnSearch {
+
+  /* Weaper app code */
+
+  #btnSearch {
     background-color: rgb(134, 64, 114);
   }
 
@@ -141,21 +150,10 @@ img {
     border-right-color: white;
   }
 
-  #save {
-    background-color: rgb(134, 64, 114);
-    color:white;
-  }
-
-  #weather {
-    /* margin-right: 10px;
-    margin-left: 10px; */
-    padding: 5%;
-    background-color: rgb(9, 6, 24);
-    border: solid;
-    border-color: white;
-  } 
-
   #weather-icon {
     width: 90%;
   }
   
+  #optSearch {
+    margin-bottom: 10px;
+  }
