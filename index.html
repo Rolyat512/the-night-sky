@@ -14,7 +14,7 @@
   </head>
 
 
-  <body class="">
+  <body>
     <style>
       body {
         background-image: url('./Assets/background-image/galaxy1.jpg');
@@ -24,13 +24,6 @@
       }
       </style>
     <header class="hero">
-      <!-- <style>
-        header {
-          background-image: url('./Assets/background-image/galaxy-banner.jpg');
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-        }
-        </style> -->
       <div class="hero-body">
         <h1 class="title is-1" id="main-title">The Night Sky</h1>
         <nav class="tabs is-right is-medium">
@@ -38,7 +31,6 @@
             <li class="is-active">
               <a class="link-color" href="#about">Fun Facts</a>
             </li>
-            <!-- add id to href and the container/link i want to navigate too-->
             <li class="is-active">
               <a class="link-color" href="#nasa">Photo of the day</a>
             </li>
@@ -55,7 +47,7 @@
 
          
     <div class="columns is-moible">
-      <!-- About section below -->
+      <!-- Fun Facts Section below -->
       <div class="column is-one-quarter" id="about">
         <h1 class="title is-2" id="about-title">Did you know?</h1>
         <div class="notification" id="about-info">
@@ -94,6 +86,7 @@
               <figcaption id="todayCaption2"></figcaption>
               <figcaption id="todayCaption3"></figcaption>
               <figcaption id="todayCaption4"></figcaption>
+              <button id="save">Save To Favorites</button>
             </figure>
           </div>  
         </section>
@@ -104,8 +97,10 @@
                   
                   <div class="column is-5"> 
                     <h1 class="title">Weather Forecast</h1>
+                    <textarea id="search">Insert City Name</textarea>
                           <section class="textbox">
-                              <textarea id="search">Detroit</textarea>
+                            <select id="optSearch">
+                            </select>
                           </section>
                           <section class="button is-responsive" id="btnSearch">
                                <div>Search city!</div>
@@ -129,12 +124,12 @@
                   
                       
                       <div class="column">
-                          <img class="weather-icon" img src="./Assets/icons/unknown.png"></img>
+                          <img id="weather-icon" img src=""></img>
                       </div>
            
             
             </section>    
-          <!-- above this line practice html weather code  -->
+          <!-- above this is the weather code  -->
          
        </div>
       </div>
@@ -160,6 +155,6 @@
       integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
       crossorigin="anonymous"
     ></script>
-    <script src="./Assets/js/style.js"></script>
+    <script src="./Assets/js/script.js"></script>
   </body>
 </html>

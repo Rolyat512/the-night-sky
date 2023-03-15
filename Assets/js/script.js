@@ -1,13 +1,22 @@
 var apiKey = "4YA1tHl5ENjBb5eJ7mDhzrFrqGtVqULu0hn1TZnL";
-
 // Variables for Weather API
 var mainEl = document.getElementById("main")
 var btnSearchEl = document.getElementById("btnSearch")
 var userInput = $("#search")
 var mainUl = document.getElementById("weatherList")
+var store;
 
+const populateStorage = async () => {
+	store = await localStorage.cities ? JSON.parse(localStorage.cities) : [];
 
+	if(!store.length) return;
 
+	store.forEach(city => {
+		optSearch.innerHTML+= `<option>${city}</option>`;
+	});
+};
+
+populateStorage();
 
 function getTodayAPOD() {
 	var req = new XMLHttpRequest();
@@ -65,6 +74,14 @@ function getTodayAPOD() {
 			{
 				document.getElementById("todayCaption4").textContent = "Copyright: " + response.copyright;
 			}
+		var apodPhoto = response.hdurl
+		var apodSaved = $("#save")
+			
+		save.addEventListener("click", function() { 
+		localStorage.setItem("favoritephoto", JSON.stringify(apodPhoto));
+		JSON.parse(localStorage.getItem("favoritephoto"));
+		})
+
 		}
 		else
 		{
@@ -74,6 +91,7 @@ function getTodayAPOD() {
 
 	req.send(null);
 }
+
 
 /* Runs the function */
 getTodayAPOD();
@@ -93,7 +111,13 @@ function getApiSearch() {
   .then((response) => response.json())
   .then((data) => {
 	// Console logs the data to check that function is returning the proper data
-console.log(data)
+	console.log(data)
+
+	if(!store.includes(userInput.val())) {
+		store.push(userInput.val());
+		localStorage.cities = JSON.stringify(store)
+		populateStorage();
+	};
 
 	// For loop to grab all the data required
     for(let i = 0; i < data.list.length; i++) {
@@ -105,7 +129,9 @@ console.log(data)
 	  var mainListSix = document.getElementById("listSix")
 	  var locationIcon = document.getElementById("weather-icon");
 	  // Variable to grab the Problem Child
-	  var {icon} = data.list[i].weather[0].icon;
+	  var {icon} = data.list[i].weather[0];
+
+	  locationIcon.src = `http://openweathermap.org/img/w/${icon}.png`
 
 	  function cloudConditions() {
 		var cloudResponse = data.list[i].clouds.all
