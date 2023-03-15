@@ -13,16 +13,15 @@
     <link rel="stylesheet" type="text/css" href="./Assets/Css/style.css" />
   </head>
 
-
   <body>
     <style>
       body {
-        background-image: url('./Assets/background-image/galaxy1.jpg');
+        background-image: url("./Assets/background-image/galaxy1.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
       }
-      </style>
+    </style>
     <header class="hero">
       <div class="hero-body">
         <h1 class="title is-1" id="main-title">The Night Sky</h1>
@@ -45,7 +44,6 @@
       </div>
     </header>
 
-         
     <div class="columns is-moible">
       <!-- Fun Facts Section below -->
       <div class="column is-one-quarter" id="about">
@@ -76,10 +74,12 @@
       </div>
 
       <div class="column is-two-thirds">
-            <!-- Nasa API Section -->
+        <!-- Nasa API Section -->
         <section class="section is-small" id="nasa">
           <div class="container">
-            <h1 class="title is-2" id="apod-title">NASA Astronomy Picture of the Day (APOD)</h1>
+            <h1 class="title is-2" id="apod-title">
+              NASA Astronomy Picture of the Day (APOD)
+            </h1>
             <figure id="todayAPOD">
               <div id="todayPhotoDiv"></div>
               <figcaption id="todayCaption1"></figcaption>
@@ -88,53 +88,43 @@
               <figcaption id="todayCaption4"></figcaption>
               <button id="save">Save To Favorites</button>
             </figure>
-          </div>  
+          </div>
         </section>
 
-                <!-- below is weather section -->
+        <!-- below is weather section -->
         <section class="section is-small" id="weather">
-           
-                  
-                  <div class="column is-5"> 
-                    <h1 class="title">Weather Forecast</h1>
-                    <textarea id="search">Insert City Name</textarea>
-                          <section class="textbox">
-                            <select id="optSearch">
-                            </select>
-                          </section>
-                          <section class="button is-responsive" id="btnSearch">
-                               <div>Search city!</div>
-                          </section>
-                  </div>        
-                    
-                  
-                   <div class="column" id="weather-border">
-                  
-                      <section id="main">
-                          <ul id="weatherList">
-                              <li id="listOne"></li>
-                              <li id="listTwo"></li>
-                              <li id="listThree"></li>
-                              <li id="listFour"></li>
-                              <li id="listFive"></li>
-                              <li id="listSix"></li>
-                          </ul>
-                      </section>
-                  </div>
-                  
-                      
-                      <div class="column">
-                          <img id="weather-icon" img src=""></img>
-                      </div>
-           
-            
-            </section>    
-          <!-- above this is the weather code  -->
-         
-       </div>
+          <div class="column is-5" id="weather-main">
+            <h1 class="title">Weather Forecast</h1>
+            <textarea id="search">Insert City Name</textarea>
+            <section class="textbox">
+              <select id="optSearch"></select>
+            </section>
+            <section class="button is-responsive" id="btnSearch">
+              <div>Search city!</div>
+            </section>
+          </div>
+
+          <div class="column" id="weather-border">
+            <section id="main">
+              <ul id="weatherList">
+                <li id="listOne"></li>
+                <li id="listTwo"></li>
+                <li id="listThree"></li>
+                <li id="listFour"></li>
+                <li id="listFive"></li>
+                <li id="listSix"></li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="column">
+            <img id="weather-icon" img src="" />
+          </div>
+        </section>
+        <!-- above this is the weather code  -->
       </div>
     </div>
-    
+
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
