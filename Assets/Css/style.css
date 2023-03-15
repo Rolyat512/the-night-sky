@@ -1,7 +1,6 @@
 body {
   justify-content: space-between;
-} 
-
+}
 
 /* header and footer  */
 
@@ -12,22 +11,22 @@ body {
 #main-title {
   font-size: 75px;
   font-weight: bold;
-  font-style: italic;  
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 a {
-  color:rgb(134, 64, 114);
-} 
+  color: rgb(134, 64, 114);
+}
 
 .link-color {
-  color:rgb(134, 64, 114);
-} 
+  color: rgb(134, 64, 114);
+}
 
 .footer {
   background-color: rgb(9, 6, 24);
 }
-
 
 /* about section */
 
@@ -46,27 +45,23 @@ a {
   border-color: white;
 }
 
-
 .section {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-} 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .is-active {
   color: orange;
 }
 
-.is-active a:hover{
-    color: lightskyblue;
+.is-active a:hover {
+  color: lightskyblue;
 }
 
 #about {
-    margin: 10px;
-
+  margin: 10px;
 }
-
-
 
 /* nasa APOD styling code */
 
@@ -75,85 +70,82 @@ a {
   font-weight: bold;
 }
 
-
 img {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    max-height: 100%;
-    align-content: center;
-  }
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  align-content: center;
+}
 
-  figure {
-    padding: 10px;
-    text-align: center;
-  }
-  figcaption {
-    text-align: left;
-  }
-  .title {
-    font-style: bold;
-  }
-  #todayAPOD {
-    border: solid lightgrey;
-    font-size: 20px;
-  }
+figure {
+  padding: 10px;
+  text-align: center;
+}
+figcaption {
+  text-align: left;
+}
+.title {
+  font-style: bold;
+}
+#todayAPOD {
+  border: solid lightgrey;
+  font-size: 20px;
+}
 
-  iframe {
-    width: 960px;
-    height: 540px;
-    border: 0;
-  }
-  #resolutionLabel {
-    margin-left: 30px;
-  }
-  #stdRadio {
-    margin-left: 15px;
-  }
-  #submitDate {
-    margin-left: 50px;
-  } 
+iframe {
+  width: 960px;
+  height: 540px;
+  border: 0;
+}
+#resolutionLabel {
+  margin-left: 30px;
+}
+#stdRadio {
+  margin-left: 15px;
+}
+#submitDate {
+  margin-left: 50px;
+}
 
-
-  #nasa {
-    margin-right: 10px; 
-    margin-left: 10px;
-}  
+#nasa {
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
 #save {
   background-color: rgb(134, 64, 114);
-  color:white;
-  padding: 5px; 
+  color: white;
+  padding: 5px;
   border-radius: 8px;
 }
 
+/* Weaper app code */
 
-  /* Weaper app code */
+#btnSearch {
+  background-color: rgb(134, 64, 114);
+}
 
-  #btnSearch {
-    background-color: rgb(134, 64, 114);
-  }
+#weather {
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 5%;
+  background-color: rgb(9, 6, 24);
+  border: solid;
+  border-color: white;
+}
 
-  #weather {
-    margin-right: 10px;
-    margin-left: 10px;
-    padding: 5%;
-    background-color: rgb(9, 6, 24);
-    border: solid;
-    border-color: white;
-  } 
-  
-  #weather-border {
-    border-left: solid;
-    border-left-color: white;
-    border-right: solid;
-    border-right-color: white;
-  }
+#weather-border {
+  border-left: solid;
+  border-left-color: white;
+  border-right: solid;
+  border-right-color: white;
+}
 
-  #weather-icon {
-    width: 90%;
-  }
-  
-  #optSearch {
-    margin-bottom: 10px;
-  }
+#weather-icon {
+  width: 90%;
+}
+
+#optSearch {
+  margin-bottom: 10px;
+}

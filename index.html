@@ -13,16 +13,15 @@
     <link rel="stylesheet" type="text/css" href="./Assets/Css/style.css" />
   </head>
 
-
   <body>
     <style>
       body {
-        background-image: url('./Assets/background-image/galaxy1.jpg');
+        background-image: url("./Assets/background-image/galaxy1.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
       }
-      </style>
+    </style>
     <header class="hero">
       <div class="hero-body">
         <h1 class="title is-1" id="main-title">The Night Sky</h1>
@@ -45,42 +44,57 @@
       </div>
     </header>
 
-         
     <div class="columns is-moible">
       <!-- Fun Facts Section below -->
       <div class="column is-one-quarter" id="about">
         <h1 class="title is-2" id="about-title">Did you know?</h1>
         <div class="notification" id="about-info">
           <p class="is-size-5">
-            When you look at the Andromeda galaxy (which is million light years away), the light you are seeing took million years to reach. So you are seeing the galaxy as it was million years ago.
-            <br><br>
-            Every year the sun evaporates 100,00 cubic miles of water from Earth that weigh 400 trillion tons!
-            <br><br>
-            Spare a thought for the constillations that never made it into the official list... these inlcude Machina Electrica (the electricity generator), Officina Typographica (The Printing Office), and Turdus Solitarus (the solitary thrush).
-            <br><br>
-            Only one side of the moon ever faces Earth. The moons period of rotation is exactly the same as it's period of orbit.
-            <br><br>
-            When Galileo viewed Saturn for the first time throgh a telescope, he described the planet as having "ears". It wa not until 1655 that Christian Huygens suggested the crazy theory that they might be an enormous set of rings around the planet.
-            <br><br>
-            Its estimated that the number of stars in the universe is greater than the number of grains of san.
-            <br><br>
-            Temperatures on Venus are hot enough to melt lead. 
-            <br><br>
-            If you could travel at the speed of light (186,000 miles per second) it would take 100,000 years to cross our galaxy.
-            <br><br>
-            The Earth is not a sphere! It's actually a "speroid", it is squashed slightly at the poles and bulges out at the equator due to its rotation.
-            <br><br>
-            Saturn is not the only planet with rings. Neptune has it's own ring system.    
-            
+            When you look at the Andromeda galaxy (which is million light years
+            away), the light you are seeing took million years to reach. So you
+            are seeing the galaxy as it was million years ago.
+            <br /><br />
+            Every year the sun evaporates 100,00 cubic miles of water from Earth
+            that weigh 400 trillion tons!
+            <br /><br />
+            Spare a thought for the constillations that never made it into the
+            official list... these inlcude Machina Electrica (the electricity
+            generator), Officina Typographica (The Printing Office), and Turdus
+            Solitarus (the solitary thrush).
+            <br /><br />
+            Only one side of the moon ever faces Earth. The moons period of
+            rotation is exactly the same as it's period of orbit.
+            <br /><br />
+            When Galileo viewed Saturn for the first time throgh a telescope, he
+            described the planet as having "ears". It wa not until 1655 that
+            Christian Huygens suggested the crazy theory that they might be an
+            enormous set of rings around the planet.
+            <br /><br />
+            Its estimated that the number of stars in the universe is greater
+            than the number of grains of san.
+            <br /><br />
+            Temperatures on Venus are hot enough to melt lead.
+            <br /><br />
+            If you could travel at the speed of light (186,000 miles per second)
+            it would take 100,000 years to cross our galaxy.
+            <br /><br />
+            The Earth is not a sphere! It's actually a "speroid", it is squashed
+            slightly at the poles and bulges out at the equator due to its
+            rotation.
+            <br /><br />
+            Saturn is not the only planet with rings. Neptune has it's own ring
+            system.
           </p>
         </div>
       </div>
 
       <div class="column is-two-thirds">
-            <!-- Nasa API Section -->
+        <!-- Nasa API Section -->
         <section class="section is-small" id="nasa">
           <div class="container">
-            <h1 class="title is-2" id="apod-title">NASA Astronomy Picture of the Day (APOD)</h1>
+            <h1 class="title is-2" id="apod-title">
+              NASA Astronomy Picture of the Day (APOD)
+            </h1>
             <figure id="todayAPOD">
               <div id="todayPhotoDiv"></div>
               <figcaption id="todayCaption1"></figcaption>
@@ -89,53 +103,43 @@
               <figcaption id="todayCaption4"></figcaption>
               <button id="save">Save To Favorites</button>
             </figure>
-          </div>  
+          </div>
         </section>
 
-                <!-- below is weather section -->
+        <!-- below is weather section -->
         <section class="section is-small" id="weather">
-           
-                  
-                  <div class="column is-5"> 
-                    <h1 class="title">Weather Forecast</h1>
-                    <textarea id="search">Insert City Name</textarea>
-                          <section class="textbox">
-                            <select id="optSearch">
-                            </select>
-                          </section>
-                          <section class="button is-responsive" id="btnSearch">
-                               <div>Search city!</div>
-                          </section>
-                  </div>        
-                    
-                  
-                   <div class="column" id="weather-border">
-                  
-                      <section id="main">
-                          <ul id="weatherList">
-                              <li id="listOne"></li>
-                              <li id="listTwo"></li>
-                              <li id="listThree"></li>
-                              <li id="listFour"></li>
-                              <li id="listFive"></li>
-                              <li id="listSix"></li>
-                          </ul>
-                      </section>
-                  </div>
-                  
-                      
-                      <div class="column">
-                          <img id="weather-icon" img src=""></img>
-                      </div>
-           
-            
-            </section>    
-          <!-- above this is the weather code  -->
-         
-       </div>
+          <div class="column is-5" id="weather-main">
+            <h1 class="title">Weather Forecast</h1>
+            <textarea id="search">Insert City Name</textarea>
+            <section class="textbox">
+              <select id="optSearch"></select>
+            </section>
+            <section class="button is-responsive" id="btnSearch">
+              <div>Search city!</div>
+            </section>
+          </div>
+
+          <div class="column" id="weather-border">
+            <section id="main">
+              <ul id="weatherList">
+                <li id="listOne"></li>
+                <li id="listTwo"></li>
+                <li id="listThree"></li>
+                <li id="listFour"></li>
+                <li id="listFive"></li>
+                <li id="listSix"></li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="column">
+            <img id="weather-icon" img src="" />
+          </div>
+        </section>
+        <!-- above this is the weather code  -->
       </div>
     </div>
-    
+
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
