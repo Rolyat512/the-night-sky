@@ -10,7 +10,9 @@ This website can be accessed at https://rolyat512.github.io/the-night-sky/
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+![Screenshot of Website](readme-images/README-SS1.png)
+![Screenshot of Website](readme-images/README-SS2.png)
+![Screenshot of Website](readme-images/README-SS3.png)
 
 ## Credits
 
